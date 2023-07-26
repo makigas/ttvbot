@@ -1,0 +1,15 @@
+[httpd]
+server_bind = '127.0.0.1'
+server_port = 6000
+
+[redis]
+host = '127.0.0.1'
+port = 6379
+
+[discord]
+streaming_webhook_url = ''
+streaming_ping_role = ''
+
+[helix]
+app_client_id = ''
+app_client_secret = ''

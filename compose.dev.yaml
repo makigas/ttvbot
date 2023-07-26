@@ -1,0 +1,11 @@
+---
+
+version: '3.8'
+services:
+  keydb:
+    image: eqalpha/keydb
+    ports:
+      - '6379:6379'
+    volumes:
+      - './docker_data/keydb:/data'
+    command: ['keydb-server', '/etc/keydb/keydb.conf', '--appendonly', 'yes']

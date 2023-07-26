@@ -1,0 +1,21 @@
+---
+
+version: '3.8'
+services:
+  ttvbotd:
+    image: danirod/ttvbotd
+    build:
+      dockerfile: ./cmd/ttvbotd/Dockerfile
+      context: .
+    depends_on:
+      - keydb
+    ports:
+      - 6000:6000
+    volumes:
+      - './docker_data/ttvbotd:/data'
+    command: ['-config', '/data/config.toml']
+  keydb:
+    image: eqalpha/keydb
+    volumes:
+      - './docker_data/keydb:/data'
+    command: ['keydb-server', '/etc/keydb/keydb.conf', '--appendonly', 'yes']
