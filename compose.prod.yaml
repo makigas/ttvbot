@@ -3,7 +3,8 @@
 version: '3.8'
 services:
   ttvbotd:
-    image: danirod/ttvbotd
+    image: ghcr.io/makigas/ttvbotd:latest
+    platform: linux/amd64
     build:
       dockerfile: ./cmd/ttvbotd/Dockerfile
       context: .
