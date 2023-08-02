@@ -17,6 +17,8 @@ require (
 	github.com/disgoorg/json v1.1.0 // indirect
 	github.com/disgoorg/log v1.2.0 // indirect
 	github.com/disgoorg/snowflake/v2 v2.0.1 // indirect
+	github.com/gempir/go-twitch-irc/v4 v4.0.0 // indirect
+	github.com/go-redis/redismock/v9 v9.0.3 // indirect
 	github.com/golang-jwt/jwt/v4 v4.0.0 // indirect
 	github.com/sasha-s/go-csync v0.0.0-20210812194225-61421b77c44b // indirect
 	go.uber.org/atomic v1.7.0 // indirect
@@ -24,5 +26,5 @@ require (
 	go.uber.org/multierr v1.6.0 // indirect
 	go.uber.org/zap v1.23.0 // indirect
 	golang.org/x/exp v0.0.0-20220325121720-054d8573a5d8 // indirect
-	golang.org/x/sys v0.1.0 // indirect
+	golang.org/x/sys v0.4.0 // indirect
 )
