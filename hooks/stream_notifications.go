@@ -18,8 +18,4 @@ func StreamNotifications(
 			dc.AnnounceLivestreamStart(data.Title, "https://twitch.tv/"+data.Username)
 		}
 	})
-
-	events.AddEventListener("stream.offline", func(payload map[string]interface{}) {
-		dc.AnnounceLivestreamEnd("Se acabó el stream, la próxima vez madrugas")
-	})
 }
