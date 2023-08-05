@@ -50,6 +50,7 @@ func main() {
 		helixapi.Module,
 
 		// Register hooks
+		fx.Invoke(hooks.EndpointUsers),
 		fx.Invoke(hooks.StreamNotifications),
 	).Run()
 }
