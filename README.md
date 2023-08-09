@@ -14,6 +14,7 @@ This is the main repository for **ttvbot**.
 * cmd/: ttvbot commands.
   * ttvbotd/: the ttvbot daemon; this is the main program.
 * domain/: internal domains.
+  * commands/: command parser and chatbot command execution.
   * config/: global configuration and application state.
 * hooks/: global callbacks that wish to be managed by go-fx.
 * httpd/: the HTTP gateway manager.
@@ -24,6 +25,7 @@ This is the main repository for **ttvbot**.
     * eventsub/: EventSub handler.
     * helixapi/: Helix client.
 * persistence/: packages related to data storage.
+  * dbcommands/: Stores commands to use in the Twitch chatbot.
   * redis/: Redis client, exposed as a go-fx module.
 
 # Commands
